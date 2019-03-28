@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- <section><h2>Title</h2></section>
+				<section><h2>Introductions</h2></section>
+				<section><h2>The Goal</h2></section>
+				<section><h2>The Lie</h2></section>
+				<section><h2>The Truth</h2></section>
+				<section><h2>Strong Closing</h2></section> -->
+
+
+				<!-- 
+					Interactive Part:
+						- About to construct a presentation together.
+						- What does every good presentation need?
+							- Title Slide
+						- What is the most important slide?
+							- Introductions. About the speaker, clearly!
+						- When trying to explain a (potentially complex topic) I prefer to tell a Character arc (often within a wider Story arc). Bring the user along for the story.
+							- The Goal
+								- Every character has a goal. Along that journey they are hindered by:
+							- The Lie
+								- A deeply-rooted misconception they have about themselves or the world that keeps them from reaching their true potential. In order to reach their goal, they’ll need to acknowledge and overcome the Lie, by facing…
+							- The Truth
+								- Self-improvement is achieved when they learn to reject The Lie and embrace The Truth.
+						- Strong closing. 
+							Don't lose the point. Close with it.
+				-->
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				keyboard: {
+					40: 'next',
+					38: 'prev'
+				},
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

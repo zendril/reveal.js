@@ -1,0 +1,28 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "finalize",
+            "type": "shell",
+            "command": "cp /home/zendril/projects/e2/reveal.js/index-full.html /home/zendril/projects/e2/reveal.js/index.html",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "fresh",
+            "type": "shell",
+            "command": "cp /home/zendril/projects/e2/reveal.js/index-blank.html /home/zendril/projects/e2/reveal.js/index.html",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "silent",
+                "panel": "new"
+            }
+        }
+
+    ]
+}
